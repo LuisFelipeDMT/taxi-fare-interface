@@ -199,6 +199,7 @@ const predict = () => {
       })
       const querystring = query.join('&')
       const url = `${taxiFareApiUrl}?${querystring}`
+      window.open("url"); 
       fetch(url, {
         method: 'GET',
         headers: {
